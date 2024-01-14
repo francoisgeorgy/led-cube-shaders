@@ -1,8 +1,16 @@
+How to install go on the Raspberry Pi 4B
+========================================
+
+First, copy `tools/install-go.sh` to the RPi. 
+
+## Prerequisites : 
+
+The RPi OS and the `rpi-rgb-led-matrix` library must be installed according to the procedure 
+documented in https://github.com/francoisgeorgy/led-cube/blob/main/os-installation.md. 
+
 ## Install `go` : 
 
-Copy tools/install-go.sh into the server
-
-Server : 
+Log into the RPi and to : 
 
     chmod +x install-go.sh
     ./install-go.sh
