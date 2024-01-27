@@ -35,15 +35,19 @@ Logout/login again to force the reload of .profile
 
 The following package must be installed prior to shady : 
 
-    sudo apt install libegl-dev 
+    sudo apt install libegl-dev -y 
 
 Install shady : 
 
     go install github.com/polyfloyd/shady/cmd/shady@latest
 
-Note: the install is silent. Only errors are printed if any.
-
 Copy the GLSL scripts : 
+
+On the cube, make a directory for the glsl scripts : 
+
+    mkdir /home/cube/glsl
+
+From your local machine, copy the scripts : 
 
     rsync -avin src/glsl francois@192.168.1.101:/home/cube/
 

@@ -34,3 +34,14 @@ Coordinates system
 ------------------
 
 See `src/lib/libcube-2chains.glsl` for more info about the Cube coordinates system used for these shaders.
+
+
+Recommended documentation
+=========================
+
+https://thebookofshaders.com/
+
+https://github.com/patriciogonzalezvivo/glslViewer
+
+https://www.youtube.com/watch?v=f4s1h2YETNY
+
