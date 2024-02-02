@@ -5,16 +5,6 @@ This repository hosts the shaders which can be used with the [LED Cube](https://
 
 Checkout the [main repository](https://github.com/francoisgeorgy/led-cube) to get more information about the LED Cube.
 
-Dependencies
-------------
-
-The shaders scripts and tools to display them come from the following projects : 
-
-- [kbob/shaderboy/shaderboy](https://github.com/kbob/shaderboy/tree/master)
-- [polyfloyd/shady](https://github.com/polyfloyd/shady)
-- [polyfloyd/cube-shaders](https://github.com/polyfloyd/cube-shaders)
-- [hzeller/rpi-rgb-led-matrix/ledcat](https://github.com/hzeller/rpi-rgb-led-matrix/blob/master/examples-api-use/ledcat.cc)
-
 Installation
 ------------
 
@@ -37,7 +27,7 @@ See `src/lib/libcube-2chains.glsl` for more info about the Cube coordinates syst
 
 
 Recommended documentation
-=========================
+-------------------------
 
 https://thebookofshaders.com/
 
@@ -45,3 +35,13 @@ https://github.com/patriciogonzalezvivo/glslViewer
 
 https://www.youtube.com/watch?v=f4s1h2YETNY
 
+
+Credits and dependencies
+------------------------
+
+The shaders scripts and tools to display them come from the following projects :
+
+- [kbob/shaderboy/shaderboy](https://github.com/kbob/shaderboy/tree/master)
+- [polyfloyd/shady](https://github.com/polyfloyd/shady)
+- [polyfloyd/cube-shaders](https://github.com/polyfloyd/cube-shaders)
+- [hzeller/rpi-rgb-led-matrix/ledcat](https://github.com/hzeller/rpi-rgb-led-matrix/blob/master/examples-api-use/ledcat.cc)
