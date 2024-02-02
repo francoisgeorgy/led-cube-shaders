@@ -1,7 +1,7 @@
-LED Cube - GLSL Shaders
-=======================
+LED Cube - Shaders
+==================
 
-This repository hosts the GLSL shaders which can be used with the [LED Cube](https://github.com/francoisgeorgy/led-cube). 
+This repository hosts the shaders which can be used with the [LED Cube](https://github.com/francoisgeorgy/led-cube). 
 
 Checkout the [main repository](https://github.com/francoisgeorgy/led-cube) to get more information about the LED Cube.
 
