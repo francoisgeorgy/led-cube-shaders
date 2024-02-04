@@ -45,21 +45,42 @@ Copy the GLSL scripts :
 
 On the cube, make a directory for the glsl scripts : 
 
-    mkdir /home/cube/glsl
-
-From your local machine, copy the scripts : 
-
-    rsync -avin src/glsl francois@192.168.1.101:/home/cube/
+    cd /home/cube
+    git clone https://github.com/francoisgeorgy/led-cube-shaders.git shaders
 
 Test `shady` : 
 
-    cd /home/cube
+    cd /home/cube/shaders
 
     export EGL_PLATFORM=surfaceless
     export MESA_GL_VERSION_OVERRIDE=3.3
 
-    shady -ofmt rgb24 -g 192x128 -f 20 -i glsl/scripts/plasma.glsl \
+    shady -ofmt rgb24 -g 192x128 -f 20 -i src/scripts/plasma.glsl \
         | sudo /home/cube/rpi-rgb-led-matrix/examples-api-use/ledcat \
             --led-rows=64 --led-cols=64 --led-slowdown-gpio=5 \
             --led-parallel=2 --led-chain=3 --led-brightness=65
 
+
+
+
+
+
+
+    shady -ofmt rgb24 -g 192x128 -f 20 -i src/scripts/plasma.glsl -w \
+        | sudo /home/cube/rpi-rgb-led-matrix/examples-api-use/ledcat \
+            --led-rows=64 --led-cols=64 --led-slowdown-gpio=5 \
+            --led-parallel=2 --led-chain=3 --led-brightness=33
+
+
+
+    shady -ofmt rgb24 -g 128x64 -f 20 -i src/scripts/plasma.glsl \
+        | sudo /home/cube/rpi-rgb-led-matrix/examples-api-use/ledcat \
+            --led-brightness=40 \
+            --led-rows=64 --led-cols=128 --led-slowdown-gpio=5 \
+            --led-parallel=1 --led-chain=1 
+
+
+    shady -ofmt rgb24 -g 128x64 -f 20 -i src/scripts/plasma.glsl \
+        | sudo /home/cube/rpi-rgb-led-matrix/examples-api-use/ledcat \
+            --led-brightness=40 \
+            --led-rows=64 --led-cols=128 --led-slowdown-gpio=5
